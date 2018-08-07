@@ -1,0 +1,41 @@
+{
+	"world": {
+		"kingdom2": {
+			"Attributes": {
+				"Fairness": -2,
+				"Care": -2,
+				"Loyalty": 1
+			},
+			"Relationships": {
+				"kingdom3": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": -3,
+						"Care": -5,
+						"Loyalty": 0
+					}
+				}
+			},
+			"isAbstract": false
+		},
+		"kingdom3": {
+			"Attributes": {
+				"Fairness": 1,
+				"Care": -4,
+				"Loyalty": -3
+			},
+			"Relationships": {
+				"kingdom2": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": -1,
+						"Care": -2,
+						"Loyalty": -2
+					}
+				}
+			},
+			"isAbstract": false
+		}
+	},
+	"text": "A war breaks out"
+}

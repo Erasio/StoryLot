@@ -1,0 +1,11 @@
+{
+	"world": {
+		"char1": {
+			"Attributes": {
+				"Loyalty": 3.0
+			},
+			"isAbstract": true
+		}
+	},
+	"text": "$char$ becomes a lot more loyal"
+}

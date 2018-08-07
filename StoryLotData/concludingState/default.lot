@@ -1,0 +1,26 @@
+{
+	"world": {
+		"kingdom1": {
+			"Attributes": {
+				"Fairness": 3,
+				"Care": -5,
+				"Loyalty": 5
+			}
+		},
+		"kingdom2": {
+			"Attributes": {
+				"Fairness": -4,
+				"Care": 5,
+				"Loyalty": -2
+			}
+		},
+		"kingdom3": {
+			"Attributes": {
+				"Fairness": 2,
+				"Care": 1,
+				"Loyalty": 1
+			}
+		}
+	},
+	"text": "Conclusion of the story"
+}

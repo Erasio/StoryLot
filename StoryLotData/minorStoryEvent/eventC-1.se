@@ -1,0 +1,11 @@
+{
+	"world": {
+		"char1": {
+			"Attributes": {
+				"Care": -0.3
+			},
+			"isAbstract": true
+		}
+	},
+	"text": "$char$ becomes slightly less fair"
+}

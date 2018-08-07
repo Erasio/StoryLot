@@ -1,0 +1,26 @@
+{
+  "world": {
+    "kingdom1": {
+      "Attributes": {
+        "Fairness": 2,
+        "Care": -1,
+        "Loyalty": 3
+      }
+    },
+    "kingdom2": {
+      "Attributes": {
+        "Fairness": -7,
+        "Care": 4,
+        "Loyalty": -6
+      }
+    },
+    "kingdom3": {
+      "Attributes": {
+        "Fairness": -2,
+        "Care": 5,
+        "Loyalty": 2
+      }
+    }
+  },
+  "text": "A natural disaster takes place"
+}

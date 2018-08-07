@@ -1,0 +1,76 @@
+{
+	"world": {
+		"kingdom1": {
+			"Relationships": {
+				"kingdom3": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": 0,
+						"Care": 2,
+						"Loyalty": -1
+					}
+				},
+				"kingdom2": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": -2,
+						"Care": -5,
+						"Loyalty": -5
+					}
+				}
+			},
+			"Attributes": {
+				"Fairness": 3,
+				"Care": -5,
+				"Loyalty": 5
+			}
+		},
+		"kingdom2": {
+			"Relationships": {
+				"kingdom3": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": -1,
+						"Care": -1,
+						"Loyalty": -2
+					}
+				},
+				"kingdom1": {
+					"Events": [],
+					"Modifiers": []
+				}
+			},
+			"Attributes": {
+				"Fairness": -4,
+				"Care": 5,
+				"Loyalty": -2
+			}
+		},
+		"kingdom3": {
+			"Relationships": {
+				"kingdom1": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": 1,
+						"Care": 0,
+						"Loyalty": 0
+					}
+				},
+				"kingdom2": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": -2,
+						"Care": 1,
+						"Loyalty": -1
+					}
+				}
+			},
+			"Attributes": {
+				"Fairness": 2,
+				"Care": 1,
+				"Loyalty": 1
+			}
+		}
+	},
+	"text": "The beginning of our story"
+}

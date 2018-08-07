@@ -1,0 +1,37 @@
+{
+	"world": {
+		"kingdom1": {
+			"Attributes": {
+				"Fairness": 3,
+				"Loyalty": 2
+			},
+			"Relationships": {
+				"kingdom2": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": 2,
+						"Loyalty": 4
+					}
+				}
+			},
+			"isAbstract": false
+		},
+		"kingdom2": {
+			"Attributes": {
+				"Fairness": 2,
+				"Loyalty": 4
+			},
+			"Relationships": {
+				"kingdom1": {
+					"Events": [],
+					"Modifiers": {
+						"Fairness": 1,
+						"Loyalty": 1
+					}
+				}
+			},
+			"isAbstract": false
+		}
+	},
+	"text": "A treaty is signed"
+}
