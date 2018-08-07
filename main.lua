@@ -4,6 +4,8 @@ math.random()
 math.random()
 math.random()
 
+saveFile = false
+
 function love.load()
 	json = require("Utils.json")
 	sl = require("StoryLot")
@@ -49,10 +51,12 @@ function love.load()
 		initialStates = { World.load("StoryLotData/initialState/default.lot") },
 		keySteps = keySteps,
 		minorStoryEvents = minorStoryEvents,
-		conclustionSteps = { World.load("StoryLotData/concludingState/default.lot") }, -- ToDo: Create and select proper state
+		conclustionSteps = { World.load("StoryLotData/concludingState/default.lot") }, 
 		numTransitionSteps = 3,
 		numKeyStatesPerStep = 2
 	}
+
+	-- Output
 
 	print("")
 
@@ -82,22 +86,28 @@ function love.load()
 		end
 	end
 
+	outputPath = ""
+
 	for _, text in pairs(texts) do
 		print(text)
 	end
 
-	local file, errorstr = love.filesystem.newFile("demoOutput.txt", "w")
+	if saveFile then 
+		local file, errorstr = love.filesystem.newFile("demoOutput.txt", "w")
         
-    if file then
-    	for _, text in pairs(texts) do
-			file:write(text .. "\r\n")
-		end
-		print("File written to: " .. love.filesystem.getSaveDirectory() .. "/demoOutput.txt")
-    else
-        print(errorstr) 
-    end
+    	if file then
+	    	for _, text in pairs(texts) do
+				file:write(text .. "\r\n")
+			end
 
-    file:close()
+			outputPath = "Output file written to: " .. love.filesystem.getSaveDirectory() .. "/demoOutput.txt"
+			print(outputPath)
+	    else
+	        print(errorstr) 
+	    end
+
+	    file:close()
+    end
 end
 
 function love.update(dt)
@@ -107,5 +117,8 @@ function love.draw()
 	if storyGraph then
 		sl.drawGraph(storyGraph)
 		love.timer.sleep(0.1)
+	end
+	if outputPath then
+		love.graphics.print(outputPath)
 	end
 end
